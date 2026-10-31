@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 736" role="img" aria-label="EvaliX">
+  <rect width="736" height="736" fill="#edebec"/>
+  <g transform="translate(136 208) scale(0.85)" fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linejoin="round" stroke-linecap="round">
+    <!-- E: depth -->
+    <path d="M0 0 L-38 32 L-38 376 L0 344"/>
+    <path d="M-38 376 L196 376 L234 344"/>
+    <!-- E: front -->
+    <path d="M0 0 L234 0 L234 72 L76 72 L76 134 L200 134 L200 204 L76 204 L76 272 L234 272 L234 344 L0 344 Z"/>
+    <!-- E: inline -->
+    <path d="M200 36 L38 36 L38 308 L200 308 M38 169 L166 169"/>
+
+    <g transform="translate(342 0)">
+      <!-- X: depth -->
+      <path d="M0 344 L-38 376 L38 376 L76 344"/>
+      <path d="M164 344 L126 376 L202 376 L240 344"/>
+      <!-- X: front -->
+      <path d="M0 0 L76 0 L120 128 L164 0 L240 0 L160 172 L240 344 L164 344 L120 216 L76 344 L0 344 L80 172 Z"/>
+    </g>
+  </g>
+</svg>

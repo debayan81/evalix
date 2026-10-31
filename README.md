@@ -1,4 +1,4 @@
-# Perception - AI-Powered Online Evaluation Portal
+# EvaliX - AI-Powered Online Evaluation Portal
 
 In today’s education landscape, **automated assessments** often fail to provide meaningful feedback for descriptive answers.
 Even with the presence of AES (Automated Essay Grading), it works in open-world and hence, not Context specific, and does not provide any feedback.
@@ -24,24 +24,6 @@ Even with the presence of AES (Automated Essay Grading), it works in open-world 
 - Uses **LLM** to **compare** student responses with teacher-provided answers.
 - Provides **personalized feedback** and **suggestions** for improvement.
 - Ensures **fair and unbiased** evaluation across all students by using pre-defined rules and rubric.
-
-### Application Screenshots
-
-<div align="center">
-
-|       Authentication       |           Teacher Dashboard            |
-| :------------------------: | :------------------------------------: |
-| ![Login](Images/Pimg1.png) | ![Teacher Dashboard](Images/Pimg2.png) |
-
-|        Question Management        |            Question Creation            |
-| :-------------------------------: | :-------------------------------------: |
-| ![Teacher View](Images/Pimg3.png) | ![Creating Questions](Images/Pimg4.png) |
-
-|           Student Dashboard            |              AI Evaluation              |
-| :------------------------------------: | :-------------------------------------: |
-| ![Student Dashboard](Images/Pimg5.png) | ![Student Evaluation](Images/Pimg6.png) |
-
-</div>
 
 ## Tech Stack
 
@@ -119,6 +101,5 @@ The tests use a temporary database and a fake LLM. They need no API key.
 ```
 backend/     FastAPI service, LLM grading, tests
 peak-app/    Next.js frontend
-Images/      screenshots
 docker-compose.yml   optional local PostgreSQL
 ```
