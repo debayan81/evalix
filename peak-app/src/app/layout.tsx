@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 //metadata configuration
 export const metadata: Metadata = {
-  title: "Perception",
+  title: "EvaliX",
   description: "A platform for evaluation",
 };
 

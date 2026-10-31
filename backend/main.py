@@ -21,7 +21,7 @@ from app.utils.logging import logger
 async def lifespan(app: FastAPI):
     await init_models()
     logger.info(
-        "Perception backend started",
+        "EvaliX backend started",
         environment=settings.ENVIRONMENT,
         database="sqlite" if IS_SQLITE else "postgresql",
         llm_model=settings.GROQ_MODEL,

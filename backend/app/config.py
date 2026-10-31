@@ -28,7 +28,7 @@ def _load_or_create_dev_secret() -> str:
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Perception Backend"
+    PROJECT_NAME: str = "EvaliX Backend"
     VERSION: str = "1.0.0"
     API_STR: str = "/api"
 

@@ -1,6 +1,6 @@
-# Perception frontend
+# EvaliX frontend
 
-Next.js app for Perception. It talks to the FastAPI backend in `../backend`.
+Next.js app for EvaliX. It talks to the FastAPI backend in `../backend`.
 
 ## Run it
 

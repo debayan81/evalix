@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736 736" role="img" aria-label="EvaliX">
+  <rect width="736" height="736" fill="#edebec"/>
+  <g transform="translate(-30 0)" fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linejoin="round" stroke-linecap="round">
+    <!-- side faces (depth) -->
+    <path d="M300 196 L262 228 L262 572 L300 540"/>
+    <path d="M262 572 L496 572 L534 540"/>
+    <path d="M281 212 L281 556"/>
+    <!-- front face -->
+    <path d="M300 196 L534 196 L534 268 L376 268 L376 330 L500 330 L500 400 L376 400 L376 468 L534 468 L534 540 L300 540 Z"/>
+    <!-- inline -->
+    <path d="M500 232 L338 232 L338 504 L500 504 M338 365 L466 365"/>
+  </g>
+</svg>

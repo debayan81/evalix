@@ -17,8 +17,8 @@ export default function Page() {
       <div className="relative flex min-h-svh w-full flex-col items-center p-6 md:p-10">
         <div className="mb-16">
           <Link href="/" className="flex items-center gap-3 font-medium">
-            <img src="/logo.jpg" alt="Logo" className="h-10 w-10 rounded-lg" />
-            <p className="text-3xl font-bold text-white">Perception</p>{" "}
+            <img src="/logo.svg" alt="EvaliX logo" className="h-10 w-10 rounded-lg" />
+            <p className="text-3xl font-bold text-white">EvaliX</p>{" "}
           </Link>
         </div>
         <div className="w-full max-w-md">

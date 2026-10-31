@@ -9,8 +9,8 @@ export default function LoginPage() {
         <ThemeToggle className="absolute right-4 top-4 md:right-6 md:top-6" />
         <div className="flex flex-col justify-center gap-2 md:justify-start">
           <a href="#" className="flex items-center gap-2 font-medium">
-            <img src="/logo.jpg" alt="Logo" className="h-8 w-8 rounded-lg" />
-            <p className="text-3xl font-bold">Perception</p>
+            <img src="/logo.svg" alt="EvaliX logo" className="h-8 w-8 rounded-lg" />
+            <p className="text-3xl font-bold">EvaliX</p>
           </a>
           <p className="m-2 text-lg">
             A Platform for LLM-Based evaluation and feedback.
