@@ -1,3 +1,5 @@
+import re
+import uuid
 import warnings
 from datetime import datetime, timezone
 
@@ -22,15 +24,29 @@ def normalize_database_url(url: str) -> str:
     if url.startswith("postgresql+asyncpg://") and "sslmode=" in url:
         # asyncpg calls the option "ssl", libpq calls it "sslmode"
         url = url.replace("sslmode=", "ssl=")
+    if url.startswith("postgresql+asyncpg://"):
+        # libpq-only option (Neon adds it); asyncpg rejects unknown arguments
+        url = re.sub(r"[?&]channel_binding=[^&]*", "", url)
+        if "?" not in url and "&" in url:
+            url = url.replace("&", "?", 1)
     return url
 
 
 db_url = normalize_database_url(settings.DATABASE_URL)
 IS_SQLITE = db_url.startswith("sqlite")
+# PgBouncer in transaction mode, e.g. Neon's "-pooler" host
+IS_POOLER = "-pooler." in db_url
 
 engine_kwargs: dict = {"echo": settings.DATABASE_ECHO}
 if not IS_SQLITE:
     engine_kwargs.update(pool_pre_ping=True, pool_size=5, max_overflow=10)
+if IS_POOLER:
+    # Consecutive transactions may land on different server connections, so
+    # asyncpg must not cache prepared statements or reuse their names.
+    engine_kwargs["connect_args"] = {
+        "statement_cache_size": 0,
+        "prepared_statement_name_func": lambda: f"__asyncpg_{uuid.uuid4()}__",
+    }
 
 engine = create_async_engine(db_url, **engine_kwargs)
 

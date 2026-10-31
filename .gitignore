@@ -233,3 +233,7 @@ pyrightconfig.json
 *.db
 *.db-journal
 .dev_secret_key
+
+# Claude Code local settings
+.claude/settings.local.json
+.neon
